@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisual | Ana Pacheco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header style="background-color: var(--bg-color); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="fotografia.html">FOTOGRAFIA</a></li>
+                <li><a href="audiovisual.html" style="color: var(--accent-color);">AUDIOVISUAL</a></li>
+                <li><a href="midia-impressa.html">MÍDIA IMPRESSA</a></li>
+                <li><a href="site.html">SITE</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn-tema">
+                        <svg class="globo-balada-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 1v3" />
+                            <circle cx="12" cy="13" r="8" />
+                            <path d="M4.5 11h15M4 13h16M4.5 15h15M6.5 9h11M6.5 17h11" />
+                            <path d="M12 4c-2.5 2.5-2.5 15.5 0 18M12 4c2.5 2.5 2.5 15.5 0 18M12 4c-5 3-5 15 0 18M12 4c5 3 5 15 0 18" />
+                        </svg>
+                        TEMA
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 120px; padding-bottom: 80px; min-height: 80vh;">
+        <div class="container">
+            
+            <!-- Título da Página (Branco e centralizado) -->
+            <h2 style="text-align: center; color: #ffffff; margin-bottom: 50px;">AUDIOVISUAL</h2>
+
+            <!-- Título do Projeto (Amarelo, à esquerda, acima do vídeo) -->
+            <h3 style="color: var(--accent-color); text-align: left; margin-bottom: 30px; font-family: var(--font-heading); font-size: 1.5rem; text-transform: uppercase;">A ARTE DA MELANCOLIA</h3>
+
+            <!-- Grid forçando o alinhamento lado a lado e centralizado -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                
+                <!-- Esquerda: Vídeo -->
+<div class="video-audiovisual" style="width: 100%; max-width: 800px; margin: 40px auto; text-align: center;">
+    
+    <h3 style="margin-bottom: 20px;">Assista com som</h3>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+            src="https://www.youtube.com/embed/YgaGw2JbkmI" 
+            title="Arte da Melancolia" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+                <!-- Direita: Imagem do Poema -->
+                <div class="poema-container">
+                    <img src="imagens/Poema.png" alt="Poema A Arte da Melancolia" class="img-poema zoomable" style="width: 100%; display: block; border-radius: 8px;">
+                </div>
+            </div>
+            <!-- Descrição do projeto (Centralizada, com espaço em cima, texto normal) -->
+            <div style="text-align: center; margin-top: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p style="color: #cccccc; font-size: 1.1rem; line-height: 1.6; text-transform: none;">Curta inspirado no poema criado, como forma de comunicação não verbal.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Tela do Zoom das imagens -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Ana Pacheco Portfolio</p>
+            <div class="logo-ap">A<br>P</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
